@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practical6-grid</title>
+	<style>
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5def09;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 60px;
+}
+.a1 {
+    text-align: center;
+    padding: 40px;
+}
+
+.a1 img {
+    max-width: 100%;
+}
+
+.a2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.b1 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.b1 img {
+    max-width: 100%;
+}
+
+.b1 h2 {
+    margin-top: 10px;
+}
+
+.b1 p {
+    margin-bottom: 5px;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">logo</div>
+        <nav>
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">News</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </nav>
+      </header>
+      <section class="a1">
+            <img src="Picture1.png" alt="Picture1">
+            <h1>Top news</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+    </section>
+                  <section class="a2">
+                    <div class="b1">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                    <div class="b1">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                    <div class="b1">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                    <div class="b1">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                </section>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practical3</title>
+    <meta charset="utf-8">
+</head>
+<header>Practical 3</header>
+<style>
+    header {
+        text-align:center;
+        font-size: 65px;
+    }
+    h1.n1 {
+        border-style: outset;
+        padding: 15px;
+        margin: 15px;
+        border-top-width: 20px;
+        border-left-width: 20px;
+        border-right-width: 20px;
+        border-bottom-width: 20px;
+        text-align: center;
+        font-size: 40px;
+    }
+    p.n2 {
+        border-style: double;
+        border-color: rgb(255, 170, 0);
+        border-collapse: separate;
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    h1.n3 {
+        background: linear-gradient(0.4turn, #f700ff, #ffffff, #00ffee);
+        font-size: 40px;
+        text-align:center;
+    }
+    p.n4 {
+        border-style: dashed;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 15px;
+        border-color: rgb(255, 0, 0);
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    h1.n5 {
+        background: linear-gradient(0.4turn, #f700ff, #ffffff, #00ffee);
+        font-size: 40px;
+        text-align:center;
+    }
+    p.n6 {
+        border-style: dotted;
+        padding: 15px;
+        margin: 15px;
+        border-color: rgb(0, 145, 255);
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    p.l1 {
+        background: linear-gradient(0.4turn, #b03fb4, #ffffff, #ff0000);
+    }
+    p.l2 {
+        background-color: green;
+        opacity: 0.6;
+    }
+    p.l3 {
+        background: repeating-linear-gradient(#e66465, #9198e5, #9198e5);
+    }
+    p.l4 {
+        background-image: url("picture.jpg");
+    }
+    p.l5 {
+        background-image: url("picture.jpg");
+        background-repeat: repeat-x;
+    }
+</style>
+<body>
+<article>
+            <h1 class="n1">The ways to open developers console in Mozilla Firefox and Safari</h1>
+            <p class="n2">
+                	       Mozilla Firefox:
+                For Windows/Linux: Press Ctrl + Shift + I. 
+                For macOS: Press Cmd + Option + I.
+                Alternatively, you can right-click anywhere on the webpage and select "Inspect Element" from the menu.
+                           Safari: 
+                 Press Option + Cmd + C to open the developer console and inspect element simultaneously.
+                 Alternatively, you can go to Safari menu “Preferences” Advanced tab, and check the box next to "Show Develop menu in menu bar".
+                Once the Develop menu is enabled, you can click on it in the menu bar and select "Show Web Inspector" to open the developer tools.
+                </p>
+            <h1 class="n3">Absolute or relative links?</h1>
+            <p class="n4">
+                	Generally Preferable: 
+                Relative links are often preferred for internal linking within a website because they are more flexible and easier to manage. 
+                Here's why: 1. Relative links are portable and work regardless of the domain or directory structure of the website. They are based on the relative path from the current document to the target document, making them ideal for websites that may undergo changes in domain or directory structure. 2. Relative links are easier to maintain, especially in larger websites with numerous pages. If the website structure changes or pages are moved or renamed, relative links automatically adjust to the new location without requiring manual updates. 3. Relative links are simpler and more concise than absolute links, as they only specify the path relative to the current document. This makes the HTML code cleaner and easier to read. 
+                    Use Cases for Absolute Links:
+                1. Cross-Domain Linking: Absolute links are necessary when linking to resources outside the current domain or website. For example, if linking to an external website, an absolute URL is required. 2. Specific Page Addressing: In some cases, you may need to link to a specific page on your website using its exact URL. Absolute links are useful for referencing specific pages when the relative path is not sufficient. 3. Ensuring Link Accuracy: Absolute links can be used to ensure link accuracy, especially when dealing with dynamically generated content or when the structure of the website is complex and prone to changes. Relative links are generally preferred for internal linking within a website due to their flexibility, ease of maintenance, and simplicity. Absolute links are more suitable for cross-domain linking and when specific page addressing is required.
+               </p>
+            <h1 class="n5">What is the difference between JPG, GIF and PNG formats? What is WEBP image type? What is SVG?</h1>
+            <p class="n6">
+                 1. JPEG (JPG): 
+                - JPEG (Joint Photographic Experts Group) is a widely used lossy compression format for digital images.
+                 - It is suitable for photographs and complex images with gradients or color variations.
+                 - JPEG images support millions of colors and are highly compressed, making them ideal for reducing file sizes without significant loss of quality.
+                 - However, JPEG is not suitable for images with transparency and may exhibit artifacts or loss of detail when heavily compressed.
+                 2. GIF (Graphics Interchange Format):
+                 - GIF is a bitmap image format that supports up to 256 colors and animation.
+                 - It is commonly used for simple graphics, icons, logos, and short animated images (GIFs).
+                 - GIFs support transparency, making them suitable for images with simple shapes and text overlays.
+                 - However, GIFs have limited color depth and may produce large file sizes for complex images or animations.
+                 3. PNG (Portable Network Graphics):
+                 - PNG is a lossless compression format designed to replace GIF and provide better image quality and compression.
+                 - It supports millions of colors, transparency, and lossless compression, making it ideal for graphics, logos, and images with sharp edges or text.
+                 - PNG images are larger in file size compared to JPEG, but they retain higher quality and support transparency without artifacts.
+                 - PNG is commonly used for images with transparency, such as logos, icons, and images with text overlays.
+                 4. WEBP:
+                 - WEBP is a modern image format developed by Google that offers both lossy and lossless compression.
+                 - It provides superior compression compared to JPEG and PNG, resulting in smaller file sizes and faster loading times.
+                 - WEBP supports features such as transparency, animation, and metadata, making it versatile for various types of web content.
+                 - However, browser support for WEBP is not universal, and fallback mechanisms may be required for unsupported browsers. 
+                5. SVG (Scalable Vector Graphics):
+                 - SVG is a vector-based image format that uses XML markup to define graphics.
+                 - It is resolution-independent and can be scaled to any size without loss of quality, making it ideal for logos, icons, and illustrations.
+                 - SVG images are lightweight, compact, and highly compressible, resulting in smaller file sizes compared to raster images.
+                 - SVG supports interactivity, animation, and styling using CSS and JavaScript, making it versatile for dynamic web content and responsive designs.
+                </p>
+                <p class="l1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut ante at ante pulvinar viverra. Mauris ut congue sapien. Duis magna felis, aliquam sed vulputate vel, efficitur ut tellus. Vivamus eget consectetur neque. Donec dui enim, porta vel mauris a, efficitur mollis lorem. Etiam finibus diam leo, eu dapibus odio hendrerit et. In fringilla lorem lacus, vitae egestas ipsum convallis a. In hendrerit consequat arcu, non hendrerit ipsum commodo at. Duis lacinia ligula libero, a sodales lacus egestas lacinia. In consectetur eros sit amet sapien maximus, eget tempor justo dapibus. Donec vestibulum magna a orci mattis tempus.</p>
+                <p class="l2">Sed consectetur mattis risus. Quisque sodales porta lobortis. Phasellus pulvinar laoreet turpis feugiat hendrerit. In quis eleifend mauris, nec scelerisque diam. Nullam id libero nec augue sagittis porta dapibus at turpis. Curabitur nisi felis, sollicitudin et tempor ut, semper a nunc. Nulla vitae magna eu ante sagittis dictum non eget libero. Curabitur quis sem ut ligula semper mollis at sed mi.</p>
+                <p class="l3">Curabitur venenatis eros ligula, sit amet posuere tellus scelerisque at. Sed sed consectetur odio, sed consectetur velit. Sed luctus ante vitae erat consequat, sed accumsan mauris euismod. Nulla nec ex vel urna efficitur dictum. Donec rutrum lectus eu fermentum porta. Pellentesque vel commodo eros. Vestibulum tempus porta tortor, in venenatis justo tempus ut. Donec hendrerit erat tortor, rhoncus ultrices arcu tincidunt at. Duis auctor eros ante, at finibus sem facilisis eget.</p>
+                <p class="l4">Suspendisse et laoreet massa. Cras ac hendrerit justo. Integer nec odio lacus. Aliquam sed viverra est, ut venenatis est. Aliquam mattis vel eros ac malesuada. Praesent gravida sollicitudin condimentum. Cras varius pulvinar felis, id pellentesque erat congue non. Nam justo dolor, euismod at lectus a, porta lacinia nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer sit amet massa non neque iaculis lobortis. Vestibulum id ullamcorper nisl, et sodales felis. Aliquam a orci semper erat placerat sollicitudin bibendum ac orci. Phasellus in diam interdum, hendrerit nibh nec, egestas urna. In id laoreet nibh. Morbi auctor porta nisi, at hendrerit sapien convallis non.</p>
+                <p class="l5">Nunc quis gravida libero. Quisque et turpis et leo placerat faucibus in eget augue. Sed libero felis, luctus non risus eget, sagittis tincidunt orci. Mauris a rutrum metus. Duis tincidunt enim non ligula pellentesque ultrices. Vestibulum blandit sit amet tortor sit amet porta. Duis id augue sollicitudin mi venenatis maximus ac non urna. Aenean vehicula velit sit amet scelerisque dignissim. Maecenas non massa sem. Aenean vitae lectus quis leo elementum feugiat a vel enim. Mauris eleifend, tellus a fringilla viverra, ipsum nibh cursus turpis, vel tempus tortor felis quis ipsum. Praesent pretium urna justo, sit amet scelerisque metus aliquet sed. Fusce ut velit lorem. Cras felis risus, ultricies eget ex quis, luctus condimentum nibh. Nulla ac luctus purus.</p>
+        </article>
+</body>
+</html>

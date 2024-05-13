@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practical5</title>
+    <meta charset="utf-8">
+</head>
+<header>Practical 5</header>
+<style>
+    header {
+        text-align:center;
+        font-size: 65px;
+    }
+    h1.n1 {
+        background: linear-gradient(0.4turn, #f700ff, #ffffff, #00ffee);
+        font-size: 40px;
+        text-align:center;
+    }
+    p.n2 {
+        border-style: dotted;
+        padding: 15px;
+        margin: 15px;
+        border-color: rgb(0, 145, 255);
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    h1.n3 {
+        background: linear-gradient(0.4turn, #f700ff, #ffffff, #00ffee);
+        font-size: 40px;
+        text-align:center;
+    }
+    p.n4 {
+        border-style: dotted;
+        padding: 15px;
+        margin: 15px;
+        border-color: rgb(0, 145, 255);
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    h1.n5 {
+        background: linear-gradient(0.4turn, #f700ff, #ffffff, #00ffee);
+        font-size: 40px;
+        text-align:center;
+    }
+    p.n6 {
+        border-style: dotted;
+        padding: 15px;
+        margin: 15px;
+        border-color: rgb(0, 145, 255);
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    h1.n7 {
+        background: linear-gradient(0.4turn, #f700ff, #ffffff, #00ffee);
+        font-size: 40px;
+        text-align:center;
+    }
+    p.n8 {
+        border-style: dotted;
+        padding: 15px;
+        margin: 15px;
+        border-color: rgb(0, 145, 255);
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    h1.n9 {
+        background: linear-gradient(0.4turn, #f700ff, #ffffff, #00ffee);
+        font-size: 40px;
+        text-align:center;
+    }
+    p.n10 {
+        border-style: dotted;
+        padding: 15px;
+        margin: 15px;
+        border-color: rgb(0, 145, 255);
+        text-align: left;
+        font-size: 25px;
+        font-style: inherit;
+    }
+    .image-container {
+        max-width: 400px;
+        float: right;
+    }
+    .image-container img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .image-container::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .picture3 {
+        background-image: url('picture3.png');
+        width: 200px;
+        height: 150px;
+    }
+
+    .picture4 {
+        background-image: url('picture4.png');
+        width: 200px;
+        height: 150px;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+          <a href="#a1">What is a box model in CSS</a>
+          <a href="#a2">What is a “clearfix hack” and when does it need to be applied</a>
+          <a href="#a3">What is a “margin collapse” and what are the use cases for margin: auto and negative margin values</a>
+          <a href="#a4">What was the problem with achieving Holy Grail layout</a>
+          <a href="#a5">What are the modern ways to achieve Holy Grail layout</a>
+        </nav>
+      </header>
+<article>
+            <h1 class="n1" id="a1">What is a box model in CSS</h1>
+            <p class="n2">The box model in CSS defines how elements are rendered on a web page, treating them as rectangular boxes with content, padding, border, and margin. The box-sizing property determines whether an element's width and height include padding and border (`border-box`) or not (`content-box`).</p>
+            <p><img src="picture1.png" max-width="400px" float="right"></p>
+            <h1 class="n3" id="a2">What is a “clearfix hack” and when does it need to be applied</h1>
+            <p class="n4">The "clearfix hack" is a CSS technique used to clear floats within a container element. It's applied when the container doesn't have a specified height and contains floated child elements, preventing layout issues like collapsed containers or overlapping content.</p>
+            <p><img src="picture2.png" max-width="400px" float="right"></p>
+            <h1 class="n5" id="a3">What is a “margin collapse” and what are the use cases for margin: auto and negative margin values</h1>
+            
+                 <p class="n6">Margin collapse occurs when vertical margins of adjacent elements overlap, with the larger margin value being applied. margin: auto; is used to horizontally center an element within its parent.Negative margin values adjust element positioning, allowing for overlapping effects or fine-tuning layout.
+
+                </p>
+                <h1 class="n7" id="a4">What was the problem with achieving Holy Grail layout</h1>
+                <p class="n8">The main problem with achieving the Holy Grail layout in CSS was creating equal-height columns, flexible column ordering, and ensuring compatibility across different browsers without using hacks or workarounds.</p>
+                <h1 class="n9" id="a5">What are the modern ways to achieve Holy Grail layout</h1>
+                <p class="n10">Modern ways to achieve the Holy Grail layout in CSS involve using Flexbox or CSS Grid, which provide cleaner and more intuitive solutions compared to traditional methods like floats and positioning.</p>
+        </article>
+                 <div class="image-container"> 
+                 <div class="picture3"></div>
+                 <div class="picture4"></div>
+                </div>
+                <footer>
+                    <p>Matvey</p>
+                    <p>Course name</p>
+                    <p>01.01.2001 Monday</p>
+                    <p>Times square</p>
+                  </footer>
+</body>
+</html>

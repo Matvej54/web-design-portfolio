@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practical7</title>
+</head>
+<body>
+    <script> 
+        // Function to perform calculation based on operator and two numbers
+function calculate(num1, operator, num2) { 
+ switch(operator) { 
+ case '+': 
+ return num1 + num2;  // Addition operation
+ case '-': 
+ return num1 - num2;  // Subtraction operation
+ case '*': 
+ return num1 * num2;  // Multiplication operation
+ case '/': 
+ if(num2 != 0) { 
+ return num1 / num2;  // Division operation if num2 is not zero
+ } else { 
+ alert("Error: Division by zero is not allowed.");  // Alert for division by zero error
+ return NaN; 
+ } 
+ default: 
+ alert("Error: Invalid operator.");  // Alert for invalid operator
+ return NaN; 
+ } 
+} 
+
+do { 
+ // Prompting user to enter the first number
+ var num1 = parseFloat(prompt("Enter the first number:")); 
+ // Prompting user to enter the operator
+ var operator = prompt("Enter an operator (+, -, *, /):"); 
+ // Prompting user to enter the second number
+ var num2 = parseFloat(prompt("Enter the second number:")); 
+ // Calling the calculate function to get the result
+ var result = calculate(num1, operator, num2); 
+ // Checking if result is not NaN
+ if(!isNaN(result)) { 
+ // Displaying the result
+ alert("The result is: " + result); 
+ } 
+ // Asking user if he want to perform another calculation
+ var repeat = prompt("Do you want to perform another calculation? (yes/no)"); 
+} while(repeat.toLowerCase() === 'yes'); 
+</script>
+</body>
+</html>
