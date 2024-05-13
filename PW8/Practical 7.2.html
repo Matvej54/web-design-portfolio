@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>practical7.2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        owl-carousel {
+            margin-top: 20px;
+        }
+        
+        .owl-item {
+            padding: 20px;
+        }
+        
+        .slide {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style> 
+</head> 
+<body> 
+    <label for="num1">Enter the first number:</label> 
+    <input type="number" id="num1"> 
+    <label for="operator">Choose an operator (+, -, *, /):</label> 
+    <select id="operator"> 
+        <option value="+">+</option> 
+        <option value="-">-</option> 
+        <option value="*">*</option> 
+        <option value="/">/</option> 
+    </select> 
+    <label for="num2">Enter the second number:</label> 
+    <input type="number" id="num2"> 
+    <button onclick="performCalculation()">Calculate</button> 
+    <output id="result"></output> 
+    <script> 
+        function calculate(num1, operator, num2) { 
+            switch(operator) { 
+                case '+': 
+                    return num1 + num2; 
+                case '-': 
+                    return num1 - num2; 
+                case '*': 
+                    return num1 * num2; 
+                case '/': 
+                    if(num2 != 0) { 
+                        return num1 / num2; 
+                    } else { 
+                        return "Error: Division by zero is not allowed."; 
+                    } 
+                default: 
+                    return "Error: Invalid operator."; 
+            } 
+        } 
+        function performCalculation() { 
+            var num1 = parseFloat(document.getElementById('num1').value); 
+            var operator = document.getElementById('operator').value; 
+            var num2 = parseFloat(document.getElementById('num2').value); 
+            var result = calculate(num1, operator, num2); 
+            document.getElementById('result').innerText = "The result is: " + result; 
+        } 
+    </script>
+    <div class="owl-carousel">
+        <div class="slide">
+            <h2>Explain “repaint” and “reflow” of the webpage.</h2>
+            <p>Reflow refers to the process of recalculating the layout of elements on a webpage, which can occur due to changes in content, styles, or layout properties. It involves determining the size and position of each element relative to other elements on the page. Reflow is necessary whenever there are changes that affect the layout, such as adding, removing, or modifying elements, changing the dimensions of elements, or adjusting CSS styles.
+
+                Repaint, on the other hand, involves updating the visual appearance of elements on the webpage without affecting their layout. It occurs when changes are made to properties that affect only the visual rendering of elements, such as background color, text color, borders, or visibility. Repaint is necessary to reflect changes in the visual presentation of elements to the user.
+                
+                Both reflow and repaint are essential processes in rendering webpages, but they can be resource-intensive, especially if triggered frequently or unnecessarily. Minimizing the frequency of reflow and repaint operations can help improve the performance and responsiveness of web applications.</p>
+        </div>
+        <div class="slide">
+            <h2>How does JavaScript on the webpage affects the page load speed and performance? </h2>
+            <p>JavaScript on a webpage can slow down page loading due to parsing, execution, render blocking, network requests, memory consumption, and asynchronous operations. Optimization techniques like minification, concatenation, asynchronous loading, code splitting, and caching can mitigate these issues and improve performance.</p>
+        </div>
+        <div class="slide">
+            <h2>What is “minification” of the script? Why it is useful to minify your scripts?</h2>
+            <p>Minification is the process of removing unnecessary characters from code, such as white spaces, comments, and newline characters, without altering its functionality. It's useful to minify scripts because it reduces their file size, leading to faster downloads and improved loading times for web pages. Additionally, smaller file sizes reduce bandwidth usage and improve website performance, especially on slower network connections.</p>
+        </div>
+        <div class="slide">
+            <h2>What is a JS Web Worker and when do we need it?</h2>
+            <p>A JavaScript Web Worker is a script running in the background, separate from the main execution thread of a web page. It allows for concurrent execution of tasks without blocking the main user interface. Web Workers are useful for handling computationally intensive tasks, such as data processing, image manipulation, or complex calculations, without impacting the responsiveness of the user interface. They enable multi-threading in JavaScript, improving performance and responsiveness for web applications, particularly those dealing with heavy computational workloads.</p>
+        </div>
+        <div class="slide">
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://medium.com/swlh/what-the-heck-is-repaint-and-reflow-in-the-browser-b2d0fb980c08">Source 1</a></li>
+                <li><a href="https://getpublii.com/blog/javascript-speed-and-performance.html">Source 2</a></li>
+                <li><a href="https://www.imperva.com/learn/performance/minification/#:~:text=Minification%20is%20the%20process%20of,into%20a%20better%20user%20experience.">Source 3</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API">Source 4</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
+                }
+            });
+        });
+    </script>    
+</body> 
+</html>

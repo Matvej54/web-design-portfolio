@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>practical6-flex</title>
+    <meta charset="utf-8">
+</head>
+<style>
+header {
+    justify-content: space-between;
+    display: flex;
+    text-align:center;
+    font-size: 40px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5def09;
+    color: white;
+}
+.logo {
+    font-size: 60px;
+}
+.a1 {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.b1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+}
+    .a2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.b2 {
+    flex: 0 0 calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+.button {
+    display: block;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.c1 {
+    padding: 10px;
+}
+</style>
+<body>
+    <header>
+        <div class="logo">logo</div>
+        <nav>
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">News</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </nav>
+      </header>
+      <section class="a1">
+        <div class="b1">
+            <img src="Picture1.png" alt="Picture1">
+            <h1>Top news</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+    </section>
+                  <section class="a2">
+                    <div class="b2">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                    <div class="b2">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                    <div class="b2">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                    <div class="b2">
+                        <img src="Picture2.png" alt="Picture 2">
+                        <h2>News</h2>
+                        <p>01.01.2000</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id egestas justo. Nullam eu odio neque. Morbi in elit massa. Phasellus fringilla in dolor rhoncus congue. Donec lacus eros, semper at nisi ut, consequat fermentum nisi. Ut hendrerit in eros in pulvinar. Pellentesque enim sem, auctor ac viverra quis, ullamcorper vitae dui. Nullam commodo bibendum tellus, a sollicitudin lorem accumsan quis. Donec laoreet risus sit amet ante porttitor porttitor.</p>
+                        <a href="" class="button">Read more</a>
+                    </div>
+                </section>
+                <aside>
+                    <nav class="c1">
+                        <ul>
+                            <li><a href="">Button 1</a></li>
+                            <li><a href="">Button 2</a></li>
+                            <li><a href="">Button 3</a></li>
+                            <li><a href="">Button 4</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+</body>
+</html>
